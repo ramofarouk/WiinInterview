@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>Kernel Interview</title>
+  <link href="<%= BASE_URL %>css/styles.css" rel="stylesheet" />
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <style>
+    .modal:before {
+      content: "";
+      display: none;
+      background: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+    }
+
+    .opened:before {
+      display: block;
+    }
+
+    .opened .modal-dialog {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+      top: 5%;
+    }
+
+    .modal-dialog {
+      background: transparent;
+      border-radius: 5px;
+      text-align: center;
+      position: fixed;
+      z-index: 11;
+    }
+
+    .modal-body {
+      padding: 20px;
+    }
+
+    .modal-body input {
+      width: 60%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      color: #888;
+      outline: 0;
+      font-size: 14px;
+      font-weight: bold
+    }
+
+    .modal-header,
+    .modal-footer {
+      padding: 10px 20px;
+    }
+
+    .modal-header {
+      border-bottom: #eeeeee solid 1px;
+    }
+
+    .modal-header h2 {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
